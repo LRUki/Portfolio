@@ -1,0 +1,19 @@
+{
+  "name": "Ryuta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "ipinfo": "^1.3.9",
+    "mailgun-js": "^0.22.0"
+  }
+}

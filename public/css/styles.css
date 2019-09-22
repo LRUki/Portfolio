@@ -1,0 +1,430 @@
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #fff;
+  color: #684949;
+  background-image: linear-gradient(to bottom, white, rgba(158, 173, 132, 0.959));
+}
+
+.aboutme-text,
+.timeline-text {
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+@media (max-width:550px) {
+
+  #about,
+  #hobby,
+  #skills {
+    padding: 20px 2%;
+  }
+}
+
+/* title-section */
+#title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+/* navigation */
+.nav-container {
+  background-color: transparent;
+  z-index: 1;
+}
+
+.nav-text {
+  height: 20px;
+}
+
+.title-image {
+  width: 100%;
+  height: auto;
+  filter: blur(4px);
+}
+
+@media (max-width:550px) {
+  .title-image {
+    height: 420px;
+  }
+}
+
+.vl {
+  border-right: 1px solid white;
+  height: 1rem;
+  margin: 12px auto;
+}
+
+@media (max-width:770px) {
+  .vl {
+    height: 0px;
+  }
+}
+
+/* text in tiltel*/
+hr {
+  width: 80%;
+  border-style: dashed;
+  border-width: .5px;
+  border-color: white;
+  right: 30px;
+  margin: 3% auto;
+}
+
+.title-text {
+  padding: 3% 1%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  border: dotted 1px solid #f1f1f1;
+  top: 30%;
+  left: 25%;
+  width: 50%;
+}
+
+.title-text h1 {
+  font-size: 6vw;
+}
+
+.title-text p {
+  font-size: 3vw;
+}
+
+@media(max-width:700px) {
+  .title-text h1 {
+    font-size: 8vw;
+  }
+
+  .title-text hr {
+    width: 95%;
+  }
+
+  .title-text h3 {
+    font-size: 4vw;
+    width: 120%;
+    position: relative;
+    right: 20px;
+  }
+}
+
+/* sns icons at the bottom of title */
+.icons {
+  top: 10px;
+  text-align: center;
+  background-color: transparent;
+  position: absolute;
+  top: 90%;
+}
+
+a.sns-button {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+}
+
+a:hover {
+  color: rgb(156, 154, 154);
+  text-decoration: none;
+}
+
+/* aboutme */
+section {
+  padding: 4% 13% 1%;
+}
+
+.sub-title {
+  border-bottom: solid orange 4px
+}
+
+.sub-title h2 {
+  background-color: orange;
+  color: #fff;
+}
+
+.profile-img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-img-container {
+  margin: auto;
+  position: relative;
+}
+
+/* appers on hover */
+#git-icon {
+  position: absolute;
+  top: 3%;
+  left: 10%;
+}
+
+#git-text {
+  position: absolute;
+  color: rgb(189, 183, 183);
+}
+
+@media (max-width: 762px) {
+  .profile-img-container {
+    margin: 50px auto 0px;
+  }
+}
+
+@media (max-width: 550px) {
+  .profile-img {
+    width: 115%;
+    position: relative;
+    right: 13px;
+  }
+
+  .profile-img-container {
+    margin: 30px auto 0px;
+  }
+}
+
+/* skills */
+/* skills=tab-menu */
+.nav-pills .nav-item .nav-link:not(.active) {
+  background-color: rgb(245, 160, 104);
+  color: rgba(243, 236, 236, 0.945);
+  opacity: 0.35;
+}
+
+.nav-pills .nav-item .nav-link:not(.active):hover {
+  background-color: orange;
+  opacity: 0.7;
+  color: white;
+}
+
+.nav-pills .nav-item .nav-link {
+  background-color: orange;
+}
+
+/* langugages */
+#skills,
+#hobby {
+  background-color: #e9e5dd
+}
+
+.works-photo,
+.skills-logo {
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+}
+
+.skills-logo img {
+  width: 55%;
+}
+
+.works-photo a img {
+  width: 70%;
+}
+
+@media (min-width:990px) {
+  .skills-logo img {
+    width: 80%;
+  }
+}
+
+.works-photo:hover {
+  opacity: 0.7
+}
+
+/* timeline */
+#education {
+  padding: 4% 9% 1%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.timeline {
+  padding-bottom: 50px;
+}
+
+/*Timeline SECTION*/
+.timeline ul {
+  padding: 50px 0;
+  overflow-x: hidden;
+}
+
+.timeline li {
+  position: relative;
+  width: 6px;
+  padding-top: 50px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, .9);
+  list-style-type: none;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.timeline-text {
+  position: relative;
+  width: 400px;
+  padding: 4px 20px 5px;
+  overflow-x: scroll;
+  background-image: linear-gradient(to bottom, #fe6976, #f36777);
+}
+
+.timeline li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline-text:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline li:nth-child(even) div {
+  left: -440px;
+}
+
+.timeline time {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, .7);
+}
+
+.timeline div::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  bottom: 7px;
+}
+
+.timeline li:nth-child(odd) div::after {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #f36776 transparent transparent;
+}
+
+.timeline li:nth-child(even) div::after {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #f36776;
+}
+
+/*GOING RESPONSIVE*/
+@media screen and (max-width: 900px) {
+  .timeline div {
+    width: 240px;
+    padding-right: 27px;
+  }
+
+  .timeline li:nth-child(even) div {
+    left: -289px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    padding: 200px 0;
+  }
+
+  .timeline ul li {
+    margin: 0 20px;
+  }
+
+  .timeline li div {
+    width: calc(100vw - 200px);
+    overflow: scroll;
+  }
+
+  .timeline li:nth-child(even) div {
+    left: 45px;
+  }
+
+  .timeline li:nth-child(even) div::after {
+    right: calc(100vw - 71px);
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #f45b69 transparent transparent;
+  }
+}
+
+.timeline-before {
+  border-color: transparent;
+  padding: 0;
+  height: 80px;
+  position: relative;
+  top: 160px;
+}
+
+/* Hobbies */
+.carousel-photo {
+  width: 40%;
+}
+
+#hobby .carousel-inner .carousel-item {
+  text-align: center;
+}
+
+#hobby .carousel-inner .carousel-item div {
+  color: rgb(255, 153, 0);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 550px) {
+  #hobby .carousel-inner .carousel-item div {
+    font-size: 16px;
+  }
+
+  .carousel-photo {
+    width: 70%;
+  }
+}
+
+/* CONTACT */
+#map {
+  margin: 10px auto;
+  border: double 7px rgb(250, 244, 244);
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 90%;
+  /* The width is the width of the web page */
+}
+
+@media(max-width:650px) {
+  #map {
+    height: 230px;
+    width: 110%;
+  }
+}
+
+@media(max-width:510px) {
+  .map-text {
+    font-size: 4vw;
+    width: 110%;
+  }
+}
+
+.input-res {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 3%;
+}
+
+/* Footer */
+#copyright {
+  font-size: 10px;
+  color: #EAF6F6;
+  text-align: center;
+}

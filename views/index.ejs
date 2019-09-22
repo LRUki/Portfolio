@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leo's portfolio</title>
+  <!-- css styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- fonts/icon -->
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dac653018e.js"></script>
+  <!-- javascript and jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="index.js"></script>
+  <!-- google maps api codming after index js which contains mapInit func -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6GBtQy3Ec1_CngBPQRiSkXMxqmnU3gvQ&callback=initMap"></script>
+
+</head>
+
+<body>
+  <section id='title'>
+    <!-- navigation -->
+    <div class='container-fluid nav-container'>
+      <nav class="navbar navbar-expand-md fixed-top ">
+        <!-- home -->
+        <a class="navbar-brand text-warning" href="#title">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target='#navbarNav' aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fas fa-bars" style='color: rgb(161, 156, 156);'></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active nav-text ml-auto ">
+              <a class="nav-link text-warning pb-0 mb-0" href="#about">About</a>
+            </li>
+            <div class='vl'></div>
+            <li class="nav-item nav-text ml-auto ">
+              <a class="nav-link text-warning pb-0 mb-0" href="#skills">Skills<span class="sr-only">(current)</span></a>
+            </li>
+            <div class='vl'></div>
+            <li class="nav-item nav-text ml-auto ">
+              <a class="nav-link text-warning pb-0 mb-0" href="#education">History</a>
+            </li>
+            <div class='vl'></div>
+            <li class="nav-item nav-text ml-auto ">
+              <a class="nav-link text-warning pb-0 mb-0" href="#hobby">Hobbies</a>
+            </li>
+            <div class='vl'></div>
+            <li class="nav-item nav-text ml-auto ">
+              <a class="nav-link text-warning pb-0 mb-0" href="#contact">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- backgroundimage -->
+    <img class='title-image' src="images/Tokyo.png" alt="tokyo photo" id="Tokyo">
+    <div>
+      <!-- text and hr -->
+      <div class='container-fluid title-text'>
+        <h1>Hi, I'm Leo</h1>
+        <hr>
+        <h3>Computer science major <br>at Imperial College London</h3>
+      </div>
+
+      <!-- sns icons-->
+      <div class='container-fluid icons'>
+        <a class='sns-button' href="https://www.linkedin.com/in/leo-unoki-519586158/">
+          <i class="fab fa-linkedin sns"></i>
+        </a>
+        <a class='sns-button' href="https://facebook.com/ryuta.unoki">
+          <i class="fab fa-facebook-square sns"></i>
+        </a>
+        <a class='sns-button' href="https://www.instagram.com/leoryuta/?hl=en">
+          <i class="fab fa-instagram sns"></i>
+        </a>
+        <a class='sns-button' href="mailto: leounoki22@gmail.com">
+          <i class="fas fa-envelope sns"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id='about'>
+    <!-- sub-tiles about -->
+    <div class='container pl-0 '>
+      <div class="d-flex flex-row sub-title">
+        <h2 class="mb-0 p-2 rounded-top">About me</h2>
+      </div>
+    </div>
+    <!-- img and about me text -->
+    <div class='container mt-3 pt-2'>
+      <div class='row'>
+        <div class='col-lg-4 col-md-5 col-sm-6 col-6 profile-img-container'>
+          <img class='profile-img' src="images/profile.png" alt="Leo's profile photo">
+        </div>
+        <div class='col-lg-8 col-md-7 col-sm-12 pt-3 pl-3'>
+          <div class='container pt-2 pt-md-4 pt-lg-4 pb-5 '>
+            <p class='aboutme-text'>Hi, welcome to my website! My name is Leo Ryuta Unoki and I am
+              a first year computer science undergraduate student
+              at Imperial College London.
+              I was born and raised in Japan, and I speak Japanese, English (and a little bit of
+              Chinese).
+            </p>
+            <p class='aboutme-text'>
+              I am keen to gain knowledge of new technologies and develop new skills in this
+              rapidly advancing field of computer science. While my interest lies in various
+              fields
+              of
+              CS and I have yet to narrow down my career choices, I am
+              particularly passionate about blockchain technologies.</p>
+            <p class='aboutme-text'>
+              I have an experience in analyzing and visualizing data with Python, developing websites,
+              and deploying DApps. <u> I am currently open to any
+                engineering-related part-time job opportunities in
+                London!</u>
+            </p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- skillsection -->
+  <section id='skills'>
+    <div class='container pl-0 '>
+      <div class="d-flex flex-row sub-title">
+        <h2 class="mb-0 p-2 rounded-top">Skills</h2>
+      </div>
+    </div>
+    <!-- menubar for skills language and projects -->
+    <div class='p-3'>
+      <ul class="nav  nav-pills  nav-justified bg-warning" id="myTab">
+        <li class="nav-item active ">
+          <a href="#language-skills" class="nav-link active" data-toggle="tab">Languages</a>
+        </li>
+        <li class="nav-item ">
+          <a href="#work-skills" class="nav-link" data-toggle="tab">My works</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class='tab-content'>
+      <!-- programming language logo -->
+      <div class='container tab-pane fade show active' id='language-skills'>
+        <div class='row pt-5'>
+
+          <div class='skills-logo  col-lg-2 col-md-4 col-6 pt-3'>
+            <img src="images/html.png" alt="html">
+            <span class='d-block'>Html</span>
+
+          </div>
+          <div class='skills-logo  col-lg-2 col-md-4 col-6 pt-3'>
+            <img src="images/css.png" alt="html">
+            <span class='d-block'>CSS</span>
+          </div>
+
+          <div class='skills-logo col-lg-2 col-md-4 col-6 pt-3'>
+            <img src="images/JS.png" alt="html">
+            <span class='d-block'>Javascript</span>
+          </div>
+          <div class='skills-logo  col-lg-2 col-md-4 col-6 pt-3'>
+            <img src="images/python.png" alt="html">
+            <span class='d-block'>Python</span>
+          </div>
+          <div class='skills-logo col col-lg-2 col-md-4 col-6 pt-3'>
+            <img src="images/solidity.png" alt="html">
+            <span class='d-block'>Solidity</span>
+          </div>
+
+        </div>
+      </div>
+      <!-- work -->
+      <div class='container tab-pane fade' id='work-skills'>
+        <!-- <div class='p-3 text-secondary'>Coming soon...</div> -->
+        <div class="row">
+
+          <div class='works-photo col-lg-4 col-md-4 col-6 pt-3'>
+            <a href="https://github.com/LRUki/visualizeIP">
+              <img src="images/ip.png" alt="python project">
+            </a>
+            <span class='d-block'>Python IP visualization</span>
+          </div>
+
+          <div class='works-photo col-lg-4 col-md-4 col-6 pt-3'>
+            <a href="#title">
+              <img src="images/website.png" alt="web development">
+            </a>
+            <span class='d-block'>This website!</span>
+          </div>
+
+          <div class='works-photo col-lg-4 col-md-4 col-6 pt-3'>
+            <a href="https://github.com/LRUki/notary-contract.git">
+              <img src="images/Notary.png" alt="web development">
+            </a>
+            <span class='d-block'>Ethereum decentralized app</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id='education'>
+    <div class='container pl-0 '>
+      <div class="d-flex flex-row sub-title">
+        <h2 class="mb-0 p-2 rounded-top">History</h2>
+      </div>
+    </div>
+    <div class='container'>
+      <div class="timeline">
+        <ul>
+          <li>
+            <hr class='timeline-before'>
+            <div class='timeline-text'>
+              <time>2019- </time>
+              Imperial College London MEng Computing | Department of Computing, Faculty of
+              Engineering.
+            </div>
+          </li>
+          <li>
+            <hr class='timeline-before'>
+            <div class='timeline-text'>
+              <time>2018-2019</time>
+              University College London International Foundation for Science and
+              Engineering | Center for Languages & International Education.
+            </div>
+          </li>
+          <li>
+            <hr class='timeline-before'>
+            <div class='timeline-text'>
+              <time>2018</time>
+              Waseda Univeristy | School of Fundamental
+              Science and Engineering (Performed 1 semester before exiting
+              program).
+            </div>
+          </li>
+          <li>
+            <hr class='timeline-before'>
+            <div class='timeline-text'>
+              <time>2018</time>
+
+              ・Assistant area representative at an international educational exchange
+              organization, YFU.<br><br>
+
+              ・Part time Airport Assistant at Tokyo Haneda International Airport.
+
+            </div>
+          </li>
+          <li>
+            <hr class='timeline-before'>
+            <div class='timeline-text'>
+              <time>2016-2017</time>
+              Foreign exchange year at Nekoosa High school, WI, USA.
+            </div>
+          </li>
+
+          <li>
+            <hr class='timeline-before'>
+            <div class='timeline-text'>
+              <time>2014-2018</time>
+              Waseda University Senior High school.
+            </div>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+    </div>
+
+  </section>
+  <section id='hobby'>
+    <div class='container pl-0 '>
+      <div class="d-flex flex-row sub-title">
+        <h2 class="mb-0 p-2 rounded-top">Hobbies</h2>
+      </div>
+    </div>
+    <!-- carousel hobbies -->
+    <div id="carouselControls" class="carousel slide" data-ride="false">
+      <ol class='carousel-indicators' class='active'>
+        <li data-target="carouselControls" data-slide-to='0'></li>
+        <li data-target="carouselControls" data-slide-to='1'></li>
+        <li data-target="carouselControls" data-slide-to='2'></li>
+        <li data-target="carouselControls" data-slide-to='3'></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid p-5">
+          <img class='carousel-photo mb-5 mb-md-3 mb-lg-3' src="images/sports.svg" alt="dog-profile">
+          <div class='carousel-caption p-3 m-1 pt-5 pr-5'>Running/Swimming/Biking</div>
+        </div>
+        <div class="carousel-item container-fluid p-5">
+          <img class='carousel-photo mb-5 mb-md-3 mb-lg-3' src="images/gym.svg" alt="dog-profile">
+          <div class='carousel-caption p-3 m-1 pt-5 pb-3'>Gym</div>
+        </div>
+        <div class="carousel-item container-fluid p-5">
+          <img class='carousel-photo mb-5 mb-md-3 mb-lg-3' src="images/travel.svg" alt="dog-profile">
+          <div class='carousel-caption p-3 m-1 pt-5 pb-3'>Travelling</div>
+        </div>
+        <div class="carousel-item container-fluid p-5">
+          <img class='carousel-photo mb-5 mb-md-3 mb-lg-3' src="images/photo.svg" alt="dog-profile">
+          <div class='carousel-caption p-3 m-1 pt-5 pb-3 '>Photography
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+  <section id='contact'>
+
+    <!-- subtitle contact -->
+    <div class='container pl-0 '>
+      <div class="d-flex flex-row sub-title">
+        <h2 class="mb-0 p-2 rounded-top">Contact me!</h2>
+      </div>
+    </div>
+    <!-- google map -->
+    <div class='container mt-5 pl-0 pl-sm-0 pl-md-3 pl-lg-3'>
+      <h5 class='pl-4 p-3 mb-0 map-text'> I'm based in London..! <br>Click the map to see if I guessed
+        your location correctly!
+      </h5>
+
+      <!-- hidden used for google map lat and long-->
+      <span id='location' style="color:transparent; font-size:1px;position:absolute">
+        <%= visitorData.loc%>
+      </span>
+
+      <div id="map" class='pt-0 mt-0'>
+
+      </div>
+
+      <h5 class='pl-5 p-2 mb-3 ' id='guess-text' style='color:rgb(55, 120, 218);'>
+
+        <% if (visitorData.country.length > 0 && visitorData.region.length > 0) {%>
+        <u class='text-primary map-text'>
+          Are you in
+          <%= visitorData.region %>,<%= visitorData.country %>?
+          Let me know if I was right!
+        </u>
+        <%} else if (visitorData.country.length>0){%>
+
+        <u class='text-primary map-text'>
+          Are you in
+          <%= visitorData.country %>?
+          Let me know if I was right!
+        </u>
+        <%} else {%>
+        <u class='text-primary map-text'>
+          Sorry, I coundn't guess your location...
+        </u>
+        <%}%>
+        
+
+      </h5>
+    </div>
+
+    <!-- contact form -->
+    <div class="container mt-4">
+      <form method='POST' id='form' action="https://formspree.io/leounoki22@gmail.com">
+
+        <div class=" form-group green-border-focus">
+          <label for="fnamet">Name</label>
+          <input type="text" class="form-control green-border-focus" id="name" placeholder="Your name.." name="name">
+        </div>
+
+        <div class="form-group purple-border-focus">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" name='email'>
+        </div>
+
+        <div class="form-group purple-border-focus">
+          <label for="exampleFormControlTextarea3">Your message</label>
+          <textarea class="form-control" id="content" rows="7" placeholder="Write something.." name="content"></textarea>
+        </div>
+        <input type="submit" id='submitButton' class='btn btn-warning mt-3'>
+
+        <!-- hidden used to attach the senders geolocation to the email -->
+        <span id='senderIpBox' style="color:transparent; font-size:0px; background-color:rgba(158, 173, 132, 0.959);position:absolute">
+          <%= visitorDataString%>
+        <input type="hidden" id='senderIpInput' name='senderIP' value='Jquery' style='background-color:rgba(158, 173, 132, 0.959)'>
+        </span>
+        </form>
+    </div>
+
+  </section>
+
+
+  <section id='footer'>
+    <p id='copyright' classs='mt-1'>© 2019 Leo Ryuta Unoki.</p>
+  </section>
+
+</body>
+
+</html>
